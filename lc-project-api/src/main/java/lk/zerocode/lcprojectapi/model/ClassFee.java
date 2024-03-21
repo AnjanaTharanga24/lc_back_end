@@ -22,4 +22,7 @@ public class ClassFee {
     @ManyToOne
     private MonthlyFee monthlyFee;
 
+    @OneToMany(mappedBy = "classFee")
+    private List<Student> studentList;
+
 }
