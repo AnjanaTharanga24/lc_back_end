@@ -5,13 +5,16 @@ import lk.zerocode.lcprojectapi.model.Student;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 @Builder
-public class StudentResponse {
+public class StudentRegisterResponse {
 
     private Long id;
-    private String firstName;
-    private String lastName;
-    private String email;
-    private ClassFee classFee;
+    private String guardianName;
+    private String guardianEmail;
+    private String contactNumber;
+    private List<Student> studentList;
+
 }
